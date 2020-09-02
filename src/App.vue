@@ -2,6 +2,8 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- :xxx=" " はv-bind:xxx=" " のシンタックスシュガー -->
+    <!-- :xxx=" " のダブルクォートの中はjsとして解釈される -->
     <Counter name="Counter 1" :initCount="5" />
     <Counter name="Counter 2" :initCount="10" />
   </div>

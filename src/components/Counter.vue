@@ -8,10 +8,13 @@
 
 <script>
 export default {
+  // porpsは親コンポーネントから渡される値が代入される
+  // コンポーネント内で書き換えはできない
   props: {
     name: String,
     initCount: Number
   },
+  // data()はコンポーネントのマウント時に一度だけ行われる
   data() {
     return {
       count: this.initCount
